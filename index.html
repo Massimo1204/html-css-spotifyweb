@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- FONT AWESOME CDN -->
+    <script src="https://kit.fontawesome.com/a98f007f43.js" crossorigin="anonymous"></script>
+
     <!-- LINK CSS STYLESHEET -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -16,19 +19,54 @@
     <main>
 
         <!-- LEFT SIDEBAR NAVIGATION -->
-        <aside id="side-nav" class="">
+        <aside id="side-nav" class="font-small">
 
             <!-- TOP PART SIDEBAR -->
             <div id="side-nav-top">
-                <div id="logo"></div>
-                <div id="home"></div>
-                <div id="my-playlist"></div>
+                <div id="logo">
+                    <img src="img/logo.svg" alt="Spotify logo">
+                    <img src="img/logo-small.svg" alt="Spotify logo small">
+                </div>
+
+                <div id="home">
+                    <p>
+                        <i class="fas fa-home"></i>
+                        <span> Home</span>
+                    </p>
+
+                    <p>
+                        <i class="fas fa-search"></i>
+                        <span> Cerca</span>
+                    </p>
+
+                    <p>
+                        <i class="fas fa-book-open"></i>
+                        <span>La tua libreria</span> 
+                    </p>
+                </div>
+
+                <div id="my-playlist">
+                    <p class="font-medium">PLAYLIST</p>
+                    <p class="font-medium"><i class="fas fa-plus-square"></i> Crea Playist</p>
+                    <p>Nome playlist</p>
+                    <p>Nome playlist</p>
+                    <p>Nome playlist</p>
+                    <p>Nome playlist</p>
+                    <p>Nome playlist</p>
+                    <p>Nome playlist</p>
+                </div>
             </div>
 
             <!-- BOTTOM PART SIDEBAR -->
             <div id="side-nav-bottom">
-                <div id="install"></div>
-                <div id="profile"></div>
+                <div id="install">
+                    <i class="fas fa-arrow-circle-down"></i> <span>Install app</span> 
+                </div>
+
+                <div id="profile">
+                    <i class="far fa-user-circle"></i>
+                    <span>John Doe</span> 
+                </div>
             </div>
         </aside>
 

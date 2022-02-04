@@ -1,11 +1,29 @@
+/* RESET */
 *{
     box-sizing: border-box;
     margin: 0;
     border: 0;
 }
 
+/* COMMON CLASSES */
 .clearfix:after{
     display: table;
     content: "";
     clear: both;
+}
+
+.font-extra-small{
+    font-size: 0.8rem;
+}
+
+.font-small{
+    font-size: 0.9rem;
+}
+
+.font-medium{
+    font-size: 1rem;
+}
+
+.font-large{
+    font-size: 1.5rem;
 }
