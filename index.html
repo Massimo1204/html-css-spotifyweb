@@ -216,10 +216,10 @@
     </main>
     
     <!-- BOTTOM CONTROL BAR -->
-    <footer id="bottom-nav" class="flex-container width-max height-80">
+    <footer id="bottom-nav" class="flex-container width-max height-80 white">
 
         <!-- LEFT PART BOTTOM CONTROL BAR -->
-        <div id="left-bottom-nav" class="flex-container white">
+        <div id="left-bottom-nav" class="flex-container">
 
                 <img src="img/sinister.jpeg" alt="sinister cover">
                 
@@ -235,7 +235,25 @@
         </div>
 
         <!-- CENTRAL PART BOTTOM CONTROL BAR -->
-        <div id="central-bottom-nav" class="flex-container"></div>
+        <div id="central-bottom-nav" class="flex-container flex-col">
+            <div id="play" class="flex-container font-medium">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-redo"></i>
+            </div>
+
+            <div id="time" class="flex-container width-fill">
+                <span class="font-small">0.25</span>
+                <div class="timer-line flex-container relative">
+                    <div class="full"></div>
+                    <div class=" dot absolute"></div>
+                    <div class="empty"></div>
+                </div>
+                <span class="font-small">4.35</span>
+            </div>
+        </div>
 
         <!-- RIGHT PART BOTTOM CONTROL BAR -->
         <div id="right-bottom-nav" class="flex-container "></div>

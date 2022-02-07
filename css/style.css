@@ -12,6 +12,10 @@
     clear: both;
 }
 
+.float-left{
+    float: left;
+}
+
 .flex-container{
     display: flex;
 }
@@ -60,6 +64,7 @@
     font-size: 2.1rem;
 }
 
+.display-hover,
 .display-mobile{
     display: none;
 }
@@ -106,7 +111,7 @@ main{
 
 #side-nav{
     justify-content: space-between;
-    width: 190px;
+    width: 180px;
     background-color: black;
     padding: 10px 10px 0 10px;
     line-height: 1.8rem;
@@ -195,7 +200,7 @@ main{
 .playlist{
     flex-direction: column;
     text-align: center;
-    width: calc((100vw - 310px) / 6);
+    width: calc((100vw - 300px) / 6);
     margin-right: 15px;
 }
 
@@ -211,8 +216,11 @@ main{
 /* FOOTER CONTROL BAR */
 footer{
     background-color: rgb(40, 40, 40);
+    justify-content: space-between;
+    align-items: center;
 }
 
+/* LEFT PART */
 #left-bottom-nav{
     width: 150px;
     padding: 20px 0px;
@@ -227,4 +235,50 @@ footer{
 
 #like-add i{
     margin: 0 0 5px 20px;
+}
+
+/* CENTRAL PART */
+#play{
+    width: 180px;
+    justify-content:space-between;
+    align-items: center;
+}
+#play .fa-play{
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 5px 4px 5px 6px;
+}
+
+/* CENTRAL TIMER LINE */
+#central-bottom-nav{
+    width: 30%;
+    align-items: center;
+}
+
+#time{
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-line{
+    width: 90%;
+    margin: 10px 20px;
+}
+
+.full{
+    border: 2px solid white ;
+    border-radius: 2px;
+    width: 9%;
+}
+
+.dot{
+    padding: 8px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.empty{
+    border: 2px solid grey;
+    width: 91%;
+    border-radius: 2px;
 }
