@@ -21,10 +21,10 @@
 
 <body>
     
-    <main class="flex-container">
+    <main class="flex-container width-max main-height">
 
         <!-- LEFT SIDEBAR NAVIGATION -->
-        <aside id="side-nav" class="flex-container grey font-small">
+        <aside id="side-nav" class="flex-container flex-col grey font-small">
 
             <!-- TOP PART SIDEBAR -->
             <div id="side-nav-top">
@@ -88,7 +88,7 @@
         <section id="main-content">
 
             <!-- TOP BAR WITH UPGRADE BUTTON -->
-            <div id="top-upgrade-bar" class="flex-container ">
+            <div id="top-upgrade-bar" class="flex-container height-80">
                 <a href="#" class="button font-medium white"> EFFETTUA L'UPGRADE</a>
             </div>
 
@@ -145,14 +145,14 @@
 
                             <div id="middle-two-recent" class="flex-container">
                                 <div class="playlist flex-container">
-                                    <img src="img/metal_lifting.jpg" alt="Metal cover">
-                                    <h2 class="font-medium">Heavy Metal</h2>
+                                    <img src="img/aquietplace.jpeg" alt="a quiet place cover">
+                                    <h2 class="font-medium">A quiet place</h2>
                                     <p class="grey font-small">Subtitle</p>
                                 </div>
 
                                 <div class="playlist flex-container">
-                                    <img src="img/metal_lifting.jpg" alt="Metal cover">
-                                    <h2 class="font-medium">Heavy Metal</h2>
+                                    <img src="img/split.jpeg" alt="Split cover">
+                                    <h2 class="font-medium">Split</h2>
                                     <p class="grey font-small">Subtitle</p>
                                 </div>
                             </div>
@@ -160,14 +160,14 @@
 
                         <div id="last-two-recent" class="flex-container">
                             <div class="playlist flex-container">
-                                <img src="img/metal_lifting.jpg" alt="Metal cover">
-                                <h2 class="font-medium">Heavy Metal</h2>
+                                <img src="img/cure.jpeg" alt="Cure cover">
+                                <h2 class="font-medium">Heavy A cure for wellness</h2>
                                 <p class="grey font-small">Subtitle</p>
                             </div>
                             
                             <div class="playlist flex-container">
-                                <img src="img/metal_lifting.jpg" alt="Metal cover">
-                                <h2 class="font-medium">Heavy Metal</h2>
+                                <img src="img/sinister.jpeg" alt="Sinister cover">
+                                <h2 class="font-medium">Sinister</h2>
                                 <p class="grey font-small">Subtitle</p>
                             </div>
                         </div>
@@ -184,14 +184,30 @@
                             <img src="img/radar.jpeg" alt="Radar release">
                             <h2 class="font-medium">Release Radar</h2>
                         </div>
+
+                        <div class="playlist flex-container">
+                            <img src="img/mixdaily.jpeg" alt="Daily mix img">
+                            <h2 class="font-medium">Daily Mix 1</h2>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- SECTION POPULAR ARTISTS -->
                 <div id="popular" class="row">
-                    <h1></h1>
-                    <p></p>
-                    <div class="playlist-container"></div>
+                    <h1 class="font-large">Artisti più popolari</h1>
+                    <p class="font-small grey">Più ascolti, più accurati saranno i suggerimenti.</p>
+
+                    <div class="playlist-container flex-container">
+                        <div class="playlist flex-container">
+                            <img src="img/youg.jpeg" alt="Lana del Rey cover">
+                            <h2 class="font-medium">Lana del Rey</h2>
+                        </div>
+
+                        <div class="playlist flex-container">
+                            <img src="img/einaudi.jpeg" alt="Ludovico Einaudi cover">
+                            <h2 class="font-medium">Ludovico Einaudi </h2>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -200,16 +216,30 @@
     </main>
     
     <!-- BOTTOM CONTROL BAR -->
-    <footer id="bottom-nav">
+    <footer id="bottom-nav" class="flex-container width-max height-80">
 
         <!-- LEFT PART BOTTOM CONTROL BAR -->
-        <div id="left-bottom-nav"></div>
+        <div id="left-bottom-nav" class="flex-container white">
+
+                <img src="img/sinister.jpeg" alt="sinister cover">
+                
+                <div id="song-name" class="flex-container flex-col">
+                    <p class="font-small ">Sinister</p>
+                    <p class="font-extra-small grey">Brano Nome</p>
+                </div>
+
+            <div id="like-add" class="flex-container flex-col font-medium grey">
+                <i class="far fa-heart"></i>
+                <i class="far fa-folder"></i>
+            </div>
+        </div>
 
         <!-- CENTRAL PART BOTTOM CONTROL BAR -->
-        <div id="central-bottom-nav"></div>
+        <div id="central-bottom-nav" class="flex-container"></div>
 
         <!-- RIGHT PART BOTTOM CONTROL BAR -->
-        <div id="right-bottom-nav"></div>
+        <div id="right-bottom-nav" class="flex-container "></div>
+
     </footer>
 </body>
 </html>
