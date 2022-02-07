@@ -33,11 +33,15 @@
 }
 
 .font-medium{
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 .font-large{
     font-size: 1.3rem;
+}
+
+.font-extra-large{
+    font-size: 2rem;
 }
 
 p{
@@ -67,6 +71,7 @@ ul{
 
 #side-nav i{
     vertical-align:middle;
+    padding-right: 5px;
 }
 
 #side-nav span{
