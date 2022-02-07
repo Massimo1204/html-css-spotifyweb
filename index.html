@@ -19,53 +19,64 @@
     <main>
 
         <!-- LEFT SIDEBAR NAVIGATION -->
-        <aside id="side-nav" class="font-small">
+        <aside id="side-nav" class="flex-container">
 
             <!-- TOP PART SIDEBAR -->
             <div id="side-nav-top">
                 <div id="logo">
                     <img src="img/logo.svg" alt="Spotify logo">
-                    <img src="img/logo-small.svg" alt="Spotify logo small">
+                    <img id="logo-small" class="display-mobile" src="img/logo-small.svg" alt="Spotify logo small">
                 </div>
 
                 <div id="home">
-                    <p>
-                        <i class="fas fa-home"></i>
-                        <span> Home</span>
-                    </p>
+                    <ul>
+                        <li class="white">
+                            <i class="fas fa-home"></i>
+                            <span> Home</span>
+                        </li>
 
-                    <p>
-                        <i class="fas fa-search"></i>
-                        <span> Cerca</span>
-                    </p>
+                        <li>
+                            <i class="fas fa-search"></i>
+                            <span> Cerca</span>
+                        </li>
 
-                    <p>
-                        <i class="fas fa-book-open"></i>
-                        <span>La tua libreria</span> 
-                    </p>
+                        <li>
+                            <i class="fas fa-book-open"></i>
+                            <span>La tua libreria</span> 
+                        </li>
+                    </ul>
                 </div>
 
                 <div id="my-playlist">
-                    <p class="font-medium">PLAYLIST</p>
+                    <p class="white">PLAYLIST</p>
                     <p class="font-medium"><i class="fas fa-plus-square"></i> Crea Playist</p>
-                    <p>Nome playlist</p>
-                    <p>Nome playlist</p>
-                    <p>Nome playlist</p>
-                    <p>Nome playlist</p>
-                    <p>Nome playlist</p>
-                    <p>Nome playlist</p>
+                    <ul>
+                        <li>
+                            Nome playlist
+                        </li>
+                        <li>Nome playlist</li>
+                        <li>Nome playlist</li>
+                        <li>Nome playlist</li>
+                        <li>Nome playlist</li>
+                        <li>Nome playlist</li>
+                    </ul>
                 </div>
             </div>
 
             <!-- BOTTOM PART SIDEBAR -->
             <div id="side-nav-bottom">
                 <div id="install">
-                    <i class="fas fa-arrow-circle-down"></i> <span>Install app</span> 
+                    <p>
+                        <i class="fas fa-arrow-circle-down"></i> <span>Install app</span> 
+                    </p>
+                    
                 </div>
 
-                <div id="profile">
-                    <i class="far fa-user-circle"></i>
-                    <span>John Doe</span> 
+                <div id="profile" class="white">
+                    <p>
+                        <i class="far fa-user-circle"></i>
+                        <h2 class="inline-block">John Doe</h2> 
+                    </p>
                 </div>
             </div>
         </aside>
@@ -85,7 +96,7 @@
             </div>
 
             <!-- SECTION RECENTLY PLAYED -->
-            <div id="recent">
+            <div id="recent" class="row">
                 <h1></h1>
                 <div class="section-container">
 
@@ -110,14 +121,14 @@
             </div>
 
             <!-- SECTION CREATED FOR YOU -->
-            <div id="for-you">
+            <div id="for-you" class="row">
                 <h1></h1>
                 <p></p>
                 <div class="section-container"></div>
             </div>
             
             <!-- SECTION POPULAR ARTISTS -->
-            <div id="popular">
+            <div id="popular" class="row">
                 <h1></h1>
                 <p></p>
                 <div class="section-container"></div>

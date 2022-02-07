@@ -12,18 +12,50 @@
     clear: both;
 }
 
-.font-extra-small{
-    font-size: 0.8rem;
+.flex-container{
+    display: flex;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.white,
+.button,
+.h2{
+    color: white;
 }
 
 .font-small{
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+}
+h2{
+    font-size: 0.7rem;
 }
 
-.font-medium{
-    font-size: 1rem;
+p{
+    line-height: 1.5rem;
 }
 
-.font-large{
-    font-size: 1.5rem;
+ul{
+    list-style: none;
+    padding: 0;
+    line-height: 2rem;
+}
+
+.display-mobile{
+    display: none;
+}
+body{
+    font-size: 0.7rem;
+    color: grey;
+}
+
+#side-nav{
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    background-color: black;
+    height: calc(100vh - 80px);
+    padding: 10px 10px 0 10px;
 }
