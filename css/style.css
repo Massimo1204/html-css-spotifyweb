@@ -16,6 +16,14 @@
     display: flex;
 }
 
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
 .inline-block{
     display: inline-block;
 }
@@ -29,7 +37,7 @@
 }
 
 .font-small{
-    font-size: 0.7rem;
+    font-size: 0.65rem;
 }
 
 .font-medium{
@@ -44,25 +52,43 @@
     font-size: 2rem;
 }
 
-p{
-    line-height: 1.5rem;
+.display-mobile{
+    display: none;
+}
+
+.width-fill{
+    width: 100%;
+}
+
+
+/* BODY AND MAIN*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+main{
+    width: 100vw;
+    background-color: rgb(20, 25, 34);
+}
+
+a{
+    text-decoration: none;
 }
 
 ul{
     list-style: none;
     padding: 0;
 }
-
-.display-mobile{
-    display: none;
+/* LEFT SIDE BAR */
+#logo img{
+    width: 100px;
 }
 
-
-/* LEFT SIDE BAR */
 #side-nav{
     flex-direction: column;
     justify-content: space-between;
-    width: 200px;
+    width: 180px;
     background-color: black;
     height: calc(100vh - 80px);
     padding: 10px 10px 0 10px;
@@ -81,3 +107,41 @@ ul{
 #install{
     border-bottom: 1px solid grey;
 }
+
+/* MAIN CONTENT SECTION */
+#main-content{
+    width: calc(100vw - 180px);
+}
+
+/* TOP MAIN UPGRADE BAR */
+#top-upgrade-bar {
+    height: 80px;
+    width: calc(100vw - 180px);
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+}
+
+#top-upgrade-bar a{
+    margin-right: 20px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+
+/* MAIN NAVIGATION BAR */
+#main-nav{
+    margin-top: 80px;
+    justify-content: center;
+}
+
+#main-nav ul{
+    padding: 20px;
+}
+
+#main-nav ul li{
+    display: inline;
+    margin: 0 10px;
+}
+
