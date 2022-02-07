@@ -133,11 +133,11 @@ main{
 /* MAIN NAVIGATION BAR */
 #main-nav{
     margin-top: 80px;
-    justify-content: center;
+    text-align: center;
 }
 
 #main-nav ul{
-    padding: 20px 0;
+    line-height: 50px;
 }
 
 #main-nav ul li{
@@ -164,7 +164,7 @@ main{
 
 #playlist-section-container img{
     margin: 30px 0 20px 0;
-    width: 220px;
+    max-width: 220px;
 }
 
 .playlist-container{
@@ -174,7 +174,7 @@ main{
 .playlist{
     flex-direction: column;
     text-align: center;
-    width: calc((100vw - 180px) / 6);
+    width: calc((100vw - 300px) / 6);
     margin-right: 15px;
 }
 
