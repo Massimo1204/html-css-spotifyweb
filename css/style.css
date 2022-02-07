@@ -20,17 +20,24 @@
     display: inline-block;
 }
 
-.white,
-.button,
-.h2{
+.white{
     color: white;
+}
+
+.grey{
+    color: grey;
 }
 
 .font-small{
     font-size: 0.7rem;
 }
-h2{
-    font-size: 0.7rem;
+
+.font-medium{
+    font-size: 1rem;
+}
+
+.font-large{
+    font-size: 1.3rem;
 }
 
 p{
@@ -40,17 +47,14 @@ p{
 ul{
     list-style: none;
     padding: 0;
-    line-height: 2rem;
 }
 
 .display-mobile{
     display: none;
 }
-body{
-    font-size: 0.7rem;
-    color: grey;
-}
 
+
+/* LEFT SIDE BAR */
 #side-nav{
     flex-direction: column;
     justify-content: space-between;
@@ -58,4 +62,17 @@ body{
     background-color: black;
     height: calc(100vh - 80px);
     padding: 10px 10px 0 10px;
+    line-height: 2rem;
+}
+
+#side-nav i{
+    vertical-align:middle;
+}
+
+#side-nav span{
+    vertical-align: middle;
+}
+
+#install{
+    border-bottom: 1px solid grey;
 }
