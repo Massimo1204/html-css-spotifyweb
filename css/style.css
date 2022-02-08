@@ -275,6 +275,9 @@ footer{
     padding: 8px;
     background-color: white;
     border-radius: 50%;
+    left: 9%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .empty{
