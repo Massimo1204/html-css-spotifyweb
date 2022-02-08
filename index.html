@@ -24,7 +24,7 @@
     <main class="flex-container width-max main-height">
 
         <!-- LEFT SIDEBAR NAVIGATION -->
-        <aside id="side-nav" class="flex-container flex-col grey font-small">
+        <aside id="side-nav" class="flex-container flex-col grey font-small width-180">
 
             <!-- TOP PART SIDEBAR -->
             <div id="side-nav-top">
@@ -216,10 +216,10 @@
     </main>
     
     <!-- BOTTOM CONTROL BAR -->
-    <footer id="bottom-nav" class="flex-container width-max height-80 white">
+    <footer id="control-bar" class="flex-container width-max height-80 white">
 
         <!-- LEFT PART BOTTOM CONTROL BAR -->
-        <div id="left-bottom-nav" class="flex-container">
+        <div id="left-control-bar" class="flex-container">
 
                 <img src="img/sinister.jpeg" alt="sinister cover">
                 
@@ -235,8 +235,8 @@
         </div>
 
         <!-- CENTRAL PART BOTTOM CONTROL BAR -->
-        <div id="central-bottom-nav" class="flex-container flex-col">
-            <div id="play" class="flex-container font-medium">
+        <div id="central-control-bar" class="flex-container flex-col">
+            <div id="play" class="flex-container font-medium width-180">
                 <i class="fas fa-random"></i>
                 <i class="fas fa-backward"></i>
                 <i class="fas fa-play"></i>
@@ -246,7 +246,7 @@
 
             <div id="time" class="flex-container width-fill">
                 <span class="font-small">0.25</span>
-                <div class="timer-line flex-container relative">
+                <div class="player-line flex-container relative">
                     <div class="full"></div>
                     <div class="display-hover dot absolute"></div>
                     <div class="empty"></div>
@@ -256,8 +256,18 @@
         </div>
 
         <!-- RIGHT PART BOTTOM CONTROL BAR -->
-        <div id="right-bottom-nav" class="flex-container "></div>
+        <div id="right-control-bar" class="flex-container font-medium">
 
+            <i class="fas fa-list"></i>
+            <i class="fas fa-desktop"></i>
+            <i class="fas fa-volume-up"></i>
+            <div class="player-line flex-container relative">
+                <div class="full"></div>
+                <div class="display-hover dot absolute"></div>
+                <div class="empty"></div>
+            </div>
+
+        </div>
     </footer>
 </body>
 </html>
