@@ -122,7 +122,7 @@ main{
     margin: 10px 0 20px 0;
 }
 
-#logo-small{
+#logo #logo-small{
     width: 30px;
     height: 30px;
 }
@@ -249,7 +249,7 @@ footer#control-bar{
 
 /* LEFT PART */
 #left-control-bar{
-    width: 150px;
+    width: 20vw;
     padding: 20px 0px;
     align-items: center;
     justify-content: flex-start;
@@ -272,12 +272,12 @@ footer#control-bar{
 #play .fa-play{
     border-radius: 50%;
     border: 2px solid white;
-    padding: 5px 4px 5px 6px;
+    padding: 4px 4px 4px 6px;
 }
 
 /* CENTRAL TIMER LINE */
 #central-control-bar{
-    width: 30%;
+    width: 30vw;
     align-items: center;
 }
 
@@ -316,11 +316,12 @@ footer#control-bar{
 #right-control-bar{
     justify-content: space-between;
     align-items: center;
-    width: 200px;
+    width: 20vw;
+    margin-left: 10px;
 }
 
 #right-control-bar .player-line{
-    width: 60%;
+    width: 55%;
     margin: 0;
 }
 
@@ -367,11 +368,7 @@ footer#control-bar{
     .not-display-mobile{
         display: none;
     }
-
-    #side-nav{
-        width: 50px;
-    }
-
+    
     .main-width{
         width: calc(100vw - 50px);
     }
@@ -379,4 +376,19 @@ footer#control-bar{
     .playlist{
         width: calc((100vw - 99px) / 2);
     }
+
+    #side-nav{
+        width: 50px;
+        padding: 2px 10px 5px 10px;
+        text-align: center;
+    }
+
+    #side-nav i{
+        padding: 0;
+    }
+
+    #install{
+        border-bottom: none;
+    }
+
 }
