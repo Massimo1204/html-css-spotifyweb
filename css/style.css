@@ -161,7 +161,7 @@ main{
 }
 
 #side-nav #install img{
-    width: 10px;
+    width: 14px;
 }
 
 #side-nav #profile img{
@@ -178,6 +178,7 @@ main{
 /* MAIN CONTENT SECTION */
 #main-content{
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 /* TOP MAIN UPGRADE BAR */
@@ -232,7 +233,7 @@ main{
 }
 
 #playlist-section-container img{
-    margin: 17px 0 15px 0 ;
+    margin-bottom: 15px;
     max-width: 270px;
 }
 
@@ -244,7 +245,25 @@ main{
     flex-direction: column;
     text-align: center;
     width: calc((100vw - 265px) / 6);
-    margin-right: 10px;
+    margin: 17px 10px 0 0;
+}
+
+.play-icon-container{
+    height: calc((100vw - 265px) / 6);
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+#popular .play-icon-container{
+    border-radius: 50%;
+}
+
+.play-icon-container i{
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 9px 8px 8px 13px;
+
 }
 
 .row{
@@ -267,7 +286,7 @@ footer#control-bar{
 /* LEFT PART */
 #left-control-bar{
     width: 30vw;
-    padding: 20px 0px;
+    padding: 10px 0px;
     align-items: center;
     justify-content: flex-start;
 }
@@ -371,6 +390,10 @@ footer#control-bar{
     .playlist{
         width: calc((100vw - 245px) / 4);
     }
+
+    .play-icon-container{
+        height: calc((100vw - 245px) / 4);
+    }
 }
 
 @media screen and (max-width : 768px){
@@ -381,7 +404,12 @@ footer#control-bar{
     .playlist{
         width: calc((100vw - 225px) / 2);
     }
+
+    .play-icon-container{
+        height: calc((100vw - 225px) / 2);
+    }
 }
+
 
 @media screen and (max-width : 576px){
     .display-mobile{
@@ -398,6 +426,10 @@ footer#control-bar{
 
     .playlist{
         width: calc((100vw - 99px) / 2);
+    }
+
+    .play-icon-container{
+        height: calc((100vw - 99px) / 2);
     }
 
     #side-nav{
@@ -447,9 +479,9 @@ footer#control-bar{
 }
 #install div:hover img,
 #side-nav li:hover img{
-    filter : brightness(300%)
+    filter: brightness(1000%) , contrast(1000%) , blur(1000%); 
 }
 
-#playlist-section-container img:after{
-
+#playlist-section-container .playlist:hover .play-icon-container{
+    display: flex;
 }
