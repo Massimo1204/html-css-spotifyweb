@@ -81,12 +81,12 @@
     width: 100%;
 }
 
-.width-155{
-    width: 155px;
+.width-175{
+    width: 175px;
 }
 
 .main-width{
-    width: calc(100vw - 155px);
+    width: calc(100vw - 175px);
 }
 
 .height-60{
@@ -125,6 +125,7 @@ main{
 #logo #logo-small{
     width: 30px;
     height: 30px;
+    margin: 3px 0 10px 0;
 }
 
 #side-nav{
@@ -135,24 +136,39 @@ main{
     overflow-y: hidden;
 }
 
+#side-nav *{
+    vertical-align: middle;
+}
+
 #my-playlist{
     flex-direction: column;
 }
 
 #my-playlist ul{
     margin-top: 10px;
-    height: calc(100vh - 390px) ;
+    height: calc(100vh - 350px) ;
     min-height: 80px;
     overflow-y: scroll;
 }
 
+#side-nav img,
 #side-nav i{
-    vertical-align:middle;
-    padding-right: 5px;
+    margin-right: 5px;
 }
 
-#side-nav span{
-    vertical-align: middle;
+#side-nav #home img{
+    width: 25px;
+}
+
+#side-nav #install img{
+    width: 10px;
+}
+
+#side-nav #profile img{
+    border-radius: 50%;
+    background-color: grey;
+    width: 20px;
+    height: 20px;
 }
 
 #install{
@@ -174,7 +190,14 @@ main{
 
 #top-upgrade-bar a{
     margin-right: 20px;
-    padding: 12px 30px;
+    padding: 9px 30px;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+
+#top-upgrade-bar a .display-hover{
+    margin-right: 20px;
+    padding: 12px 35px;
     border-radius: 30px;
     border: 1px solid white;
 }
@@ -217,7 +240,7 @@ main{
 
 #playlist-section-container img{
     margin: 17px 0 15px 0 ;
-    max-width: 230px;
+    max-width: 270px;
 }
 
 .playlist-container{
@@ -227,7 +250,7 @@ main{
 .playlist{
     flex-direction: column;
     text-align: center;
-    width: calc((100vw - 245px) / 6);
+    width: calc((100vw - 265px) / 6);
     margin-right: 10px;
 }
 
@@ -284,7 +307,7 @@ footer#control-bar{
 #central-control-bar{
     width: 33vw;
     align-items: center;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 #time{
@@ -330,7 +353,7 @@ footer#control-bar{
 }
 
 #right-control-bar .player-line{
-    width: 100px;
+    width: 85px;
     margin: 0;
 }
 
@@ -353,23 +376,21 @@ footer#control-bar{
     }
 
     .playlist{
-        width: calc((100vw - 213px) / 4);
-        margin-right: 7px;
+        width: calc((100vw - 245px) / 4);
     }
 }
 
-@media screen and (max-width : 576px){
+@media screen and (max-width : 768px){
     #recent .playlist-container #first-four-recent{
         flex-wrap: wrap;
     }
 
     .playlist{
-        width: calc((100vw - 199px) / 2);
-        margin-right: 7px;
+        width: calc((100vw - 225px) / 2);
     }
 }
 
-@media screen and (max-width : 480px){
+@media screen and (max-width : 576px){
     .display-mobile{
         display: inline-block;
     }
@@ -396,12 +417,12 @@ footer#control-bar{
         margin: 0 7px 0 0;
     }
 
-    #side-nav i{
-        padding: 0;
+    #side-nav img{
+        margin: 0;
     }
 
     #like-add i{
-        margin: 0 0 5px 5px;
+        margin: 0 0 5px 10px;
     }
 
     #install{
