@@ -119,7 +119,7 @@ main{
 /* LEFT SIDE BAR */
 #logo img{
     width: 110px;
-    margin: 10px 0 20px 0;
+    margin: 10px 0;
 }
 
 #logo #logo-small{
@@ -217,6 +217,7 @@ main{
 
 #playlist-section-container img{
     margin: 17px 0 15px 0 ;
+    max-width: 230px;
 }
 
 .playlist-container{
@@ -249,7 +250,7 @@ footer#control-bar{
 
 /* LEFT PART */
 #left-control-bar{
-    width: 20vw;
+    width: 30vw;
     padding: 20px 0px;
     align-items: center;
     justify-content: flex-start;
@@ -258,6 +259,10 @@ footer#control-bar{
 #left-control-bar img{
     width: 40px;
     margin-right: 10px;
+}
+
+#song-name{
+    min-width: 47px;
 }
 
 #like-add i{
@@ -277,8 +282,9 @@ footer#control-bar{
 
 /* CENTRAL TIMER LINE */
 #central-control-bar{
-    width: 30vw;
+    width: 33vw;
     align-items: center;
+    margin: 0 20px;
 }
 
 #time{
@@ -314,14 +320,17 @@ footer#control-bar{
 
 /* RIGHT VOLUME PART */
 #right-control-bar{
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    width: 20vw;
-    margin-left: 10px;
+    width: 30vw;
+}
+
+#right-control-bar i{
+    margin: 0 10px 0 0;
 }
 
 #right-control-bar .player-line{
-    width: 55%;
+    width: 100px;
     margin: 0;
 }
 
@@ -338,7 +347,7 @@ footer#control-bar{
 }
 
 /* RESPONSIVENESS */
-@media screen and (max-width : 768px){
+@media screen and (max-width : 992px){
     #recent .playlist-container{
         flex-wrap: wrap;
     }
@@ -349,7 +358,7 @@ footer#control-bar{
     }
 }
 
-@media screen and (max-width : 555px){
+@media screen and (max-width : 576px){
     #recent .playlist-container #first-four-recent{
         flex-wrap: wrap;
     }
@@ -383,8 +392,16 @@ footer#control-bar{
         text-align: center;
     }
 
+    #right-control-bar i{
+        margin: 0 7px 0 0;
+    }
+
     #side-nav i{
         padding: 0;
+    }
+
+    #like-add i{
+        margin: 0 0 5px 5px;
     }
 
     #install{
