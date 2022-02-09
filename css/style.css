@@ -385,6 +385,14 @@ footer#control-bar{
     width: 30%;
 }
 
+#right-control-bar i.fa-volume-up .player-line{
+    transform: rotate(270deg);
+    width: 125px;
+    bottom: 50px;
+    left: -55px;
+    padding: 10px 20px;
+}
+
 /* RESPONSIVENESS */
 @media screen and (max-width : 992px){
     #recent .playlist-container{
@@ -468,10 +476,17 @@ footer#control-bar{
         display: none;
     }
 
-    .display-ultra-small-mobile{
-        display: flex;
+    #right-control-bar i.fa-volume-up:hover .display-ultra-small-mobile{
+        display: inline-block;
     }
 
+    #right-control-bar{
+        width: 15%;
+    }
+
+    #central-control-bar{
+        width:50%
+    }
 }
 
 /* HOVER */
