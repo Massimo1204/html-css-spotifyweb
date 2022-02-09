@@ -64,13 +64,11 @@
     font-size: 2.1rem;
 }
 
-.display-hover,
-.display-mobile{
-    display: none;
-}
 
-.not-display-mobile{
-    display: inline-block;
+.display-hover,
+.display-mobile,
+.display-ultra-small-mobile{
+    display: none;
 }
 
 .width-max{
@@ -156,6 +154,11 @@ main{
     margin-right: 5px;
 }
 
+#home img:not(li.white img),
+#install img{
+    filter: invert(45%) sepia(0%) saturate(12%) hue-rotate(173deg) brightness(98%) contrast(88%); 
+}
+
 #side-nav #home img{
     width: 25px;
 }
@@ -187,6 +190,7 @@ main{
     justify-content: flex-end;
     align-items: center;
     position: fixed;
+    z-index: 2;
 }
 
 #top-upgrade-bar a{
@@ -438,6 +442,10 @@ footer#control-bar{
         text-align: center;
     }
 
+    #play{
+        width: 140px;
+    }
+
     #right-control-bar i{
         margin: 0 7px 0 0;
     }
@@ -453,6 +461,17 @@ footer#control-bar{
     #install{
         border-bottom: none;
     }
+}
+
+@media screen and (max-width : 444px) {
+    .not-display-ultra-small-mobile{
+        display: none;
+    }
+
+    .display-ultra-small-mobile{
+        display: flex;
+    }
+
 }
 
 /* HOVER */
@@ -474,12 +493,18 @@ footer#control-bar{
 #side-nav i:hover,
 #side-nav li:hover,
 #side-nav p:hover,
-#main-nav a:hover{
+#main-nav a:hover,
+#like-add i:hover,
+#song-name p.font-extra-small:hover{
     color: white;
 }
-#install div:hover img,
-#side-nav li:hover img{
-    filter: brightness(1000%) , contrast(1000%) , blur(1000%); 
+#song-name p.font-extra-small:hover{
+    text-decoration: underline;
+}
+
+#install:hover img,
+#side-nav #side-nav-top #home li:hover img{
+    filter: sepia(9%) saturate(459%) hue-rotate(1deg) brightness(113%) contrast(100%);
 }
 
 #playlist-section-container .playlist:hover .play-icon-container{
