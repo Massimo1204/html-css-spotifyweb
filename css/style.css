@@ -313,6 +313,7 @@ footer#control-bar{
     justify-content:space-between;
     align-items: center;
 }
+
 #play .fa-play{
     border-radius: 50%;
     border: 2px solid white;
@@ -322,7 +323,9 @@ footer#control-bar{
 /* CENTRAL TIMER LINE */
 #central-control-bar{
     width: 33vw;
+    height: 70%;
     align-items: center;
+    justify-content: space-between;
     margin: 0 15px;
 }
 
@@ -333,7 +336,7 @@ footer#control-bar{
 
 .player-line{
     width: 90%;
-    margin: 10px 20px;
+    margin: 5px 20px;
 }
 
 .full{
@@ -388,8 +391,8 @@ footer#control-bar{
 #right-control-bar i.fa-volume-up .player-line{
     transform: rotate(270deg);
     width: 125px;
-    bottom: 50px;
-    left: -55px;
+    bottom: 54px;
+    left: -52px;
     padding: 10px 20px;
 }
 
@@ -478,6 +481,7 @@ footer#control-bar{
 
     #right-control-bar i.fa-volume-up:hover .display-ultra-small-mobile{
         display: inline-block;
+        cursor: pointer;
     }
 
     #right-control-bar{
@@ -485,7 +489,34 @@ footer#control-bar{
     }
 
     #central-control-bar{
-        width:50%
+        width:50%;
+        justify-content:center;
+    }
+}
+
+@media screen and (max-width: 372px){
+    .not-display-smallest-screen{
+        display: none;
+    }
+
+    #right-control-bar,
+    #play{
+        font-size: 1.2rem;
+    }
+
+    #central-control-bar{
+        padding-left: 30px;
+    }
+
+    #play .fa-play{
+        border: 4px solid white;
+        padding: 5px 5px 5px 8px;
+    }
+
+    #right-control-bar i.fa-volume-up:hover,
+    #play i:hover{
+        font-size: 1.3rem;
+        cursor: pointer;
     }
 }
 
@@ -493,12 +524,14 @@ footer#control-bar{
 #central-control-bar:hover .dot.display-hover,
 #right-control-bar:hover .dot.display-hover{
     display: inline-block;
+    cursor: pointer;
 }
 
 #central-control-bar:hover .full, 
 #right-control-bar:hover .full{
     border-color: limegreen;
 }
+
 #top-upgrade-bar a:hover{
     font-size: 0.73rem;
     padding: 13px 33px;
@@ -509,12 +542,10 @@ footer#control-bar{
 #side-nav li:hover,
 #side-nav p:hover,
 #main-nav a:hover,
-#like-add i:hover,
+footer i:hover,
 #song-name p.font-extra-small:hover{
     color: white;
-}
-#song-name p.font-extra-small:hover{
-    text-decoration: underline;
+    cursor: pointer;
 }
 
 #install:hover img,
@@ -525,3 +556,13 @@ footer#control-bar{
 #playlist-section-container .playlist:hover .play-icon-container{
     display: flex;
 }
+
+#song-name p.font-extra-small:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#profile span:hover{
+    font-size: 0.85rem;
+}
+
