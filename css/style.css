@@ -41,7 +41,7 @@
 }
 
 .grey{
-    color: grey;
+    color: #727272;
 }
 
 .font-extra-small{
@@ -190,14 +190,7 @@ main{
 
 #top-upgrade-bar a{
     margin-right: 20px;
-    padding: 9px 30px;
-    border-radius: 30px;
-    border: 1px solid white;
-}
-
-#top-upgrade-bar a .display-hover{
-    margin-right: 20px;
-    padding: 12px 35px;
+    padding: 11px 30px;
     border-radius: 30px;
     border: 1px solid white;
 }
@@ -330,7 +323,7 @@ footer#control-bar{
     padding: 8px;
     background-color: white;
     border-radius: 50%;
-    left: 9%;
+    left: 8%;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -362,7 +355,7 @@ footer#control-bar{
 }
 
 #right-control-bar .dot{
-    left: 70%;
+    left: 69%;
 }
 
 #right-control-bar .empty{
@@ -428,5 +421,35 @@ footer#control-bar{
     #install{
         border-bottom: none;
     }
+}
+
+/* HOVER */
+#central-control-bar:hover .dot.display-hover,
+#right-control-bar:hover .dot.display-hover{
+    display: inline-block;
+}
+
+#central-control-bar:hover .full, 
+#right-control-bar:hover .full{
+    border-color: limegreen;
+}
+#top-upgrade-bar a:hover{
+    font-size: 0.73rem;
+    padding: 13px 33px;
+}
+
+#side-nav span:hover,
+#side-nav i:hover,
+#side-nav li:hover,
+#side-nav p:hover,
+#main-nav a:hover{
+    color: white;
+}
+#install div:hover img,
+#side-nav li:hover img{
+    filter : brightness(300%)
+}
+
+#playlist-section-container img:after{
 
 }
