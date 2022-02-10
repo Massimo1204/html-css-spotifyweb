@@ -64,7 +64,6 @@
     font-size: 2.1rem;
 }
 
-
 .display-hover,
 .display-mobile,
 .display-ultra-small-mobile{
@@ -146,7 +145,7 @@ main{
     margin-top: 10px;
     height: calc(100vh - 350px) ;
     min-height: 80px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 #side-nav img,
@@ -520,6 +519,15 @@ footer#control-bar{
     }
 }
 
+@media screen and (max-width: 333px){
+    #right-control-bar .fa-volume-up{
+        display: none;
+    }
+
+    #central-control-bar{
+        padding-left: 45px;
+    }
+}
 /* HOVER */
 #central-control-bar:hover .dot.display-hover,
 #right-control-bar:hover .dot.display-hover{
@@ -537,13 +545,14 @@ footer#control-bar{
     padding: 13px 33px;
 }
 
+
 #side-nav span:hover,
 #side-nav i:hover,
 #side-nav li:hover,
 #side-nav p:hover,
 #main-nav a:hover,
 footer i:hover,
-#song-name p.font-extra-small:hover{
+#song-name p:hover{
     color: white;
     cursor: pointer;
 }
